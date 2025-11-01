@@ -3,7 +3,7 @@ import CreateProject from './CreateProject.jsx';
 
 export default function ToDoApp() {
     return (
-        <div className='bg-gray-50 rounded-md p-5'>
+        <div className='bg-stone-100 rounded-md p-6 shadow-xl'>
               <Todo />
               <CreateProject />
         </div>
