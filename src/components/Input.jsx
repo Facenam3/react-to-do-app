@@ -1,7 +1,12 @@
-export default function Input() {
+export default function Input({ ref, ...props }) {
     return (
         <div>
-            <input className="w-full px-4 py-2 rounded-md focus-none border-2 border-purple-500" type="text" placeholder="Create Project"/>
+            <input 
+            {...props} 
+            className="w-full px-4 py-2 rounded-md focus-none border-2 border-stone-500" 
+            ref={ref}
+            type="text"
+            />
         </div>
     );
 }
