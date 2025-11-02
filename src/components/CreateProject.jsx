@@ -9,8 +9,9 @@ export default function CreateProject({ onAdd }) {
     function handleSave() {
         const enteredProject = project.current.value;
 
-        ///validate
         onAdd({ project: enteredProject });
+
+        project.current.value = "";
     }
 
     return (
